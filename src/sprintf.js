@@ -165,7 +165,7 @@
     }
 
     function str_repeat(input, multiplier) {
-        return Array(multiplier + 1).join(input)
+        return multiplier > 0 ? Array(multiplier + 1).join(input) : ""
     }
 
     /**

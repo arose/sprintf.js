@@ -39,6 +39,7 @@ describe("sprintfjs", function() {
 
         // padding
         assert.equal("-0002", sprintf("%05d", -2))
+        assert.equal("12345", sprintf("%03d", 12345))
         assert.equal("    <", sprintf("%5s", "<"))
         assert.equal("0000<", sprintf("%05s", "<"))
         assert.equal("____<", sprintf("%'_5s", "<"))
